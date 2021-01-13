@@ -60,6 +60,25 @@ header .left img {
   height: 100%;
 }
 
+@media (max-width: 630px) {
+  header .left img {
+    height: 80%;
+  }
+}
+
+@media (max-width: 630px) {
+  header {
+    padding: 1.6rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .middle {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 header .middle ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +156,22 @@ header .right .avatar {
   }
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main {
   max-width: 104.8rem;
   padding: 5.6rem 2.4rem;
@@ -174,6 +209,22 @@ main h1 {
   line-height: 12.8rem;
   letter-spacing: -1.24rem;
   color: var(--white);
+}
+
+@media (max-width: 630px) {
+  main h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: -1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  main h1 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    letter-spacing: -0.76rem;
+  }
 }
 
 main h1 span {
@@ -216,6 +267,16 @@ main .buttons {
           align-items: center;
 }
 
+@media (max-width: 450px) {
+  main .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5.4rem;
+  }
+}
+
 main .buttons > button {
   background: var(--white);
   color: var(--black);
@@ -228,6 +289,13 @@ main .buttons > button {
   cursor: pointer;
   -webkit-transition: .2s ease-in;
   transition: .2s ease-in;
+}
+
+@media (max-width: 450px) {
+  main .buttons > button {
+    margin: 0.6rem;
+    padding: 2.5rem 5.5rem;
+  }
 }
 
 main .buttons > button.outlined {

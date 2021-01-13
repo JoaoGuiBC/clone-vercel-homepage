@@ -7,6 +7,13 @@
   }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   max-width: 104.8rem;
   padding: 5.6rem 2.4rem;
@@ -27,6 +34,18 @@ main {
     line-height: 12.8rem;
     letter-spacing: -1.24rem;
     color: var(--white);
+
+    @media (max-width: 630px) {
+      font-size: 10rem;
+      line-height: 10rem;
+      letter-spacing: -1rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 7.2rem;
+      line-height: 7.2rem;
+      letter-spacing: -0.76rem;
+    }
 
     span {
       padding: 0 0.67rem;
@@ -57,6 +76,11 @@ main {
     display: flex;
     align-items: center;
 
+    @media (max-width: 450px) {
+      flex-direction: column;
+      margin-top: 5.4rem;
+    }
+
     > button {
       background: var(--white);
       color: var(--black);
@@ -71,6 +95,11 @@ main {
 
       cursor: pointer;
       transition: .2s ease-in;
+
+      @media (max-width: 450px) {
+        margin: 0.6rem;
+        padding: 2.5rem 5.5rem;
+      }
 
       &.outlined {
         background: transparent;
